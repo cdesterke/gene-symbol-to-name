@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #hsatype.pl <gene_name>
-#depends: genetype.csv
+#depends: genetype.txt
 #maintainer: christophe.desterke@gmail.com
 #license: GNU
 

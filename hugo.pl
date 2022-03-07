@@ -7,7 +7,7 @@
 
 use strict;
 use warnings;
-
+system("clear");
 # import gene name argument
 my ($search) = @ARGV;
 
@@ -34,11 +34,11 @@ while (my $line = <$fh>)
   	$alias =~ s/\s+/ /gs;
   	$chromosome =~ s/\s+/ /gs;
   	$group =~ s/\s+/ /gs;
-  	@hashname{$gene}=$name;
-  	@hashalias{$gene}=$alias;
-  	@hashchromosome{$gene}=$chromosome;
-  	@hashtype{$gene}=$type;
-  	@hashgroup{$gene}=$group;
+  	$hashname{$gene}=$name;
+  	$hashalias{$gene}=$alias;
+  	$hashchromosome{$gene}=$chromosome;
+  	$hashtype{$gene}=$type;
+  	$hashgroup{$gene}=$group;
 	}
 
 # output on screen
